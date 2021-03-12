@@ -32,7 +32,7 @@ jQuery(document).ready(function( $ ) {
 
   // Bootstrap Chart
   var doughnutData = [{
-    value: 90,
+    value: 100,
     color: "#1abc9c"
   },
   {
@@ -40,7 +40,7 @@ jQuery(document).ready(function( $ ) {
     color: "#ecf0f1"
   }
   ];
-  var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("frontend-lang").getContext("2d")).Doughnut(doughnutData);
 
   // WordPress Chart
   var doughnutData = [{
