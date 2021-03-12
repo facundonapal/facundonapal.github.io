@@ -9,7 +9,7 @@ jQuery(document).ready(function( $ ) {
 
         $('html, body').animate({
           scrollTop: target.offset().top - 62
-        }, 1500, 'easeInOutExpo');
+        }, 3000, 'easeInOutExpo');
       }
     }
   });
@@ -80,11 +80,11 @@ jQuery(document).ready(function( $ ) {
 
   // Illustrator Chart
   var doughnutData = [{
-    value: 50,
+    value: 60,
     color: "#1abc9c"
   },
   {
-    value: 50,
+    value: 40,
     color: "#ecf0f1"
   }
   ];
