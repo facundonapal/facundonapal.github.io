@@ -32,7 +32,7 @@ jQuery(document).ready(function( $ ) {
 
   // Bootstrap Chart
   var doughnutData = [{
-    value: 10,
+    value: 110,
     color: "#1abc9c"
   },
   {
