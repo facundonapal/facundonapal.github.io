@@ -35,9 +35,10 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <script src="js/clock.js"></script>
 </head>
 
-<body data-spy="scroll" data-offset="64" data-target="#section-topbar">
+<body data-spy="scroll" data-offset="64" data-target="#section-topbar" onload="engineClock()">
 
   <div id="section-topbar">
     <div id="topbar-inner">
@@ -363,9 +364,11 @@ As a graphic and web designer, as well as a frontend web developer, during a per
     <!--/.container -->
   </section>
 
+ 
+
   <section id="contact" name="contact">
     <!--FOOTER DESCRIPTION -->
-    <div id="timeTick"></div> 
+    
     <div id="footwrap">
       <div class="container">
         <div class="row">
@@ -429,6 +432,7 @@ As a graphic and web designer, as well as a frontend web developer, during a per
               </div>
 
             </form>
+            <form name="form_clock" class="form__form-clock"><input class="clock" type="text" name="clock" size="20"></form>
 
           </div>
         </div>
@@ -455,6 +459,7 @@ As a graphic and web designer, as well as a frontend web developer, during a per
       </div>
     </div>
   </div>
+  
 <script src="js/custom.js"></script>
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
@@ -466,6 +471,6 @@ As a graphic and web designer, as well as a frontend web developer, during a per
   <!-- Template Main Javascript File -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
   <script src="js/main.js"></script>
-
+  
 </body>
 </html>

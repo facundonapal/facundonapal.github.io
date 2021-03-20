@@ -11,3 +11,16 @@
 	font-weight: bold;
 
 }
+
+.clock {
+	background: #555;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.form__form-clock {
+	text-align: center; 
+	margin-top: 45px;
+}
