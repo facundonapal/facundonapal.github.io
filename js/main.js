@@ -90,3 +90,20 @@ jQuery(document).ready(function( $ ) {
   ];
   var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
 });
+
+// Typed.js
+const typedOne = new Typed('.typed', {
+  strings: ['Frontend Web Developer', 'Frontend Web Developer | <i class="typed-style">Digital Marketing</i>', 'Frontend Web Developer | <i class="typed-style">Graph. design</i>', 'Frontend Web Developer | <i class="typed-style">Branding</i>', 'Frontend Web Developer | <i class="typed-style">Guitar player ;)</i>', '<span class="typed-style">Frontend Webdev | fanapal.design@gmail.com'],
+  stringsElement: '#cadenas-texto',
+	typeSpeed: 75,
+	startDelay: 300, 
+	backSpeed: 25,
+	smartBackspace: true, 
+	shuffle: false, 
+	backDelay: 1500,
+	loop: true, 
+	loopCount: 30, //false = infinite
+	showCursor: true, 
+	cursorChar: '|',
+	contentType: 'html', 
+});

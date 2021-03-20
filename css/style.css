@@ -388,3 +388,8 @@ sm {
   font-weight: 600;
   margin: 15px 0;
 }
+
+.animation-fadein {
+  animation: fadeIn;
+  animation-duration: 4s;
+}
