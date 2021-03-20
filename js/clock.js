@@ -9,6 +9,10 @@ function engineClock(){
     if (s < 10) {
         s = "0" + s;
     }
+
+    if (m < 10) {
+        m = "0" + m;
+    }
     
     let outputTime = h + " : " + m + " : " + s;
     
