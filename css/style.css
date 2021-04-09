@@ -244,16 +244,21 @@ SECTION WRAPS
   background: #222222;
   padding: 20px 0;
   text-align: center;
-  color: #fff;
+  color: #222222;
   font-size: 16px;
 }
 
 #copyrights p {
   margin: 0 0 5px 0;
+  color: #222222;
 }
 
 .credits {
-  color: #999;
+  color: #222222;
+}
+
+#copyrights a {
+  color: #222222;
 }
 
 /* Global Values */
