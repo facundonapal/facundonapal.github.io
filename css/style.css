@@ -5,6 +5,7 @@
 *  License: https://templatemag.com/license/
 */
 
+
 body {
   background-color: #f2f2f2;
   font-family: "Lato";
@@ -155,10 +156,14 @@ SECTION WRAPS
 
 /* Header Wrap */
 
+.hero-img {
+  
+}
+
+
 #headerwrap {
-  background: url(../img/header-bg.jpg) no-repeat center top;
-  margin-top: 60px;
-  padding-top: 140px;
+  /* background: url(../img/header-bg.jpg) no-repeat center top; */
+  padding-top: 62px;
   text-align: center;
   background-attachment: relative;
   background-position: center center;
@@ -172,6 +177,7 @@ SECTION WRAPS
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  
 }
 
 #headerwrap h1 {
