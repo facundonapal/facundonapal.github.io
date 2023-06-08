@@ -42,25 +42,25 @@ jQuery(document).ready(function( $ ) {
   ];
   var myDoughnut = new Chart(document.getElementById("frontend-lang").getContext("2d")).Doughnut(doughnutData);
 
-  // WordPress Chart
+  // English Chart
   var doughnutData = [{
-    value: 65,
+    value: 90,
     color: "#1abc9c"
   },
   {
-    value: 35,
+    value: 10,
     color: "#ecf0f1"
   }
   ];
-  var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("english").getContext("2d")).Doughnut(doughnutData);
 
   // HTML Chart
   var doughnutData = [{
-    value: 80,
+    value: 70,
     color: "#1abc9c"
   },
   {
-    value: 20,
+    value: 30,
     color: "#ecf0f1"
   }
   ];
@@ -80,11 +80,11 @@ jQuery(document).ready(function( $ ) {
 
   // Illustrator Chart
   var doughnutData = [{
-    value: 60,
+    value: 85,
     color: "#1abc9c"
   },
   {
-    value: 40,
+    value: 15,
     color: "#ecf0f1"
   }
   ];
@@ -93,7 +93,7 @@ jQuery(document).ready(function( $ ) {
 
 // Typed.js
 const typedOne = new Typed('.typed', {
-  strings: ['Frontend Web Developer', 'Frontend Web Developer | <i class="typed-style">Digital Marketing</i>', 'Frontend Web Developer | <i class="typed-style">Graph. design</i>', 'Frontend Web Developer | <i class="typed-style">Branding</i>', 'Frontend Web Developer | <i class="typed-style">Guitar player ;)</i>', '<span class="typed-style">Frontend Webdev | fanapal.design@gmail.com'],
+  strings: ['Frontend Web Developer', 'Frontend Web Developer | <i class="typed-style">Design System creator</i>', 'Frontend Web Developer | <i class="typed-style">Javascript lover</i>', 'Frontend Web Developer | <i class="typed-style">CSS fun</i>', 'Frontend Web Developer | <i class="typed-style">Digital Marketing</i>', 'Frontend Web Developer | <i class="typed-style">Graph. design</i>', 'Frontend Web Developer | <i class="typed-style">Branding</i>', 'Frontend Web Developer | <i class="typed-style">Guitar player ☺</i>', '<span class="typed-style">Frontend Web developer, software engineer | fanapal.design@gmail.com'],
   stringsElement: '#cadenas-texto',
 	typeSpeed: 75,
 	startDelay: 300, 
