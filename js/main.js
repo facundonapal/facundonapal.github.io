@@ -93,7 +93,7 @@ jQuery(document).ready(function( $ ) {
 
 // Typed.js
 const typedOne = new Typed('.typed', {
-  strings: ['Frontend Web Developer', 'Frontend Web Developer | <i class="typed-style">Design System creator</i>', 'Frontend Web Developer | <i class="typed-style">Javascript lover</i>', 'Frontend Web Developer | <i class="typed-style">CSS fun</i>', 'Frontend Web Developer | <i class="typed-style">Digital Marketing</i>', 'Frontend Web Developer | <i class="typed-style">Graph. design</i>', 'Frontend Web Developer | <i class="typed-style">Branding</i>', 'Frontend Web Developer | <i class="typed-style">Guitar player ☺</i>', '<span class="typed-style">Frontend Web developer, software engineer | fanapal.design@gmail.com'],
+  strings: ['Frontend Web Developer', 'Frontend Web Developer | <i class="typed-style">Design System creator</i>', 'Frontend Web Developer | <i class="typed-style">Javascript lover</i>', 'Frontend Web Developer | <i class="typed-style">CSS fanatic</i>', 'Frontend Web Developer | <i class="typed-style">Digital Marketing</i>', 'Frontend Web Developer | <i class="typed-style">Graph. design</i>', 'Frontend Web Developer | <i class="typed-style">Branding</i>', 'Frontend Web Developer | <i class="typed-style">Guitar + flute player ☺</i>', '<span class="typed-style">Frontend Web developer, software engineer | fanapal.design@gmail.com'],
   stringsElement: '#cadenas-texto',
 	typeSpeed: 75,
 	startDelay: 300, 
