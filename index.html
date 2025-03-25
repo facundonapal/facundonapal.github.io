@@ -50,7 +50,7 @@
                     class="fa fa-file-text-o"></i></a></li>
                             <li class="menu-item"><a class="smothscroll" href="#work" title="Works"><i
                     class="fa fa-briefcase"></i></a></li>
-                            <li class="menu-item"><a class="smothscroll" href="#contact" title="Contact"><i
+                            <li class="menu-item"><a class="smothscroll" href="#contact" title="Contact" id="contact-navitem"><i
                     class="fa fa-envelope"></i></a></li>
                         </ul>
                         <!--/ uL#nav -->
@@ -92,7 +92,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-2 col-lg-offset-1">
+                    <div class="col-lg-2 typography-preset-3 col-lg-offset-1">
                         <h5 id="about">ABOUT</h5>
                     </div>
                     <div class="col-lg-6">
@@ -127,10 +127,10 @@
         <!--EDUCATION DESCRIPTION -->
         <div class="container desc">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-2 typography-preset-3">
                     <h5>EDUCATION</h5>
                 </div>
-                <div class="col-lg-10">
+                <div class="col-lg-10 typography-preset-2">
                     <div class="education-grid">
                         <div class="education-entry">
                             <div class="education-item">
@@ -210,10 +210,10 @@
           <more>En el último tiempo he tenido la posibilidad de desenvolverme como desarrollador web Front-end en la consultora Enfoque Consultores y en varias startups de alcance internacional con sede en Barcelona, como Competize, Bkie y en la firma PHOTOSLURP SL. donde me he involucrado como Ssr developer, principalmente maquetando, con diversas arquitecturas de sitios construidos con HTML, CSS y JS, PHP y MYSQL. He estado viendo de cerca la dinámica de los CMS de e-commerce más conocidos, Prestashop, Shopify, Woocommerce y Magento aprendiendo generar un entorno de trabajo local WAMP, LAMP, NODE, Browsersync (NodeJS), Oracle VM, nociones de bash scripting y powershell scripting. Soy un desarrollador en constante formación, entusiasta y ávido de aprender cada día más.</more>
         </p> -->
         <div class="row">
-            <div class="col-lg-2">
+            <div class="col-lg-2 typography-preset-3">
                 <h5>POSITIONS</h5>
             </div>
-            <div class="col-lg-10 col-lg-offset-1">
+            <div class="col-lg-10 typography-preset-2 col-lg-offset-1">
                 <h5>CURRENT POSITION</h5>
             </div>
 
@@ -230,7 +230,7 @@
                 </p>
             </div>
 
-            <div class="col-lg-10 col-lg-offset-1">
+            <div class="col-lg-10 typography-preset-2 col-lg-offset-1">
                 <h5>LAST POSITION</h5>
             </div>
 
@@ -247,7 +247,7 @@
                 </p>
             </div>
 
-            <div class="col-lg-10 col-lg-offset-1">
+            <div class="col-lg-10 typography-preset-2 col-lg-offset-1">
                 <h5>FORMER POSITIONS</h5>
             </div>
 
@@ -358,7 +358,7 @@
 
         <!--/.row -->
         <br>
-        <hr class="col-lg-10">
+        <hr class="col-lg-10 typography-preset-2">
     </div>
     <!--/.container -->
 
@@ -370,7 +370,7 @@
     <div id="skillswrap">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
+                <div class="col-lg-2 typography-preset-3 col-lg-offset-1">
                     <h5>SKILLS</h5>
                 </div>
                 <div class="col-lg-3 centered">
@@ -419,7 +419,7 @@
         <!--PORTFOLIO DESCRIPTION -->
         <div class="container desc">
             <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
+                <div class="col-lg-2 typography-preset-3 col-lg-offset-1">
                     <h5>PORTFOLIO</h5>
                 </div>
                 <div class="col-lg-6">
@@ -432,8 +432,15 @@
 
                 <div class="col-lg-6 col-lg-offset-3">
                     <p>
-                        <a href="https://www.iqvia.com/" target="_blank"><img class="img-responsive" src="img/docsite-img.png" alt=""></a>
+                        <button onclick="openIQVIA()" style="border: unset; padding: unset;"><img class="img-responsive" src="img/docsite-img.png" alt=""></button>
                     </p>
+                    <!-- <button onclick="openIQVIA()">Abrir IQVIA</button> -->
+
+<script>
+  function openIQVIA() {
+    window.open("https://www.iqvia.com/", "_blank", "width=800,height=600");
+  }
+</script>
                 </div>
                 <div class="col-lg-3">
                     <p>IQVIA</p>
@@ -445,8 +452,13 @@
                 </div>
                 <div class="col-lg-6 col-lg-offset-3">
                     <p>
-                        <a href="https://www.united.com" target="_blank"><img class="img-responsive" src="img\united-airlines-img.png" alt=""></a>
+                        <button onclick="openUNITED()" style="border: unset; padding: unset;"><img class="img-responsive" src="img\united-airlines-img.png" alt=""></button>
                     </p>
+                    <script>
+                        function openUNITED() {
+                          window.open("https://www.united.com/", "_blank", "width=800,height=600");
+                        }
+                      </script>
                 </div>
                 <div class="col-lg-3">
                     <p>UNITED AIRLINES</p>
@@ -458,7 +470,7 @@
                 </div>
                 <div class="col-lg-6 col-lg-offset-3">
                     <p>
-                        <a href="https://rola.la/rola/" target="_blank"><img class="img-responsive" src="img/port01.jpg" alt=""></a>
+                        <a href="https://rola.la/rola/" target="_blank"><img class="img-responsive" src="img/rola.png" alt=""></a>
                     </p>
                 </div>
                 <div class="col-lg-3">
@@ -508,38 +520,38 @@
 
 
 
-    <section id="contact " name="contact ">
+    <section id="footwrap " name="contact ">
         <!--FOOTER DESCRIPTION -->
 
-        <div id="footwrap ">
+        <div>
             <div class="container ">
-                <div class="row ">
+                <div class="row " id="contact">
 
-                    <div class="col-lg-2 ">
+                    <div class="col-lg-2 typography-preset-3 ">
                         <h5>CONTACT</h5>
                     </div>
                     <div class="col-lg-4 ">
-                        <p>
-                            <t>Email</t><br /> fanapal.design@gmail.com <br />
+                        <p id="black">
+                            <t class="typography-preset-18px">Email:</t><br /> fanapal.design@gmail.com <br />
                         </p>
-                        <p>
-                            <t>Address</t><br /> Calle España <br /> Postal 1636 <br /> Olivos, Buenos Aires, Argentina. <br />
+                        <p id="black">
+                            <t class="typography-preset-18px">Address:</t><br /> Benavidez <br /> Postal 1621 <br /> Tigre, Buenos Aires, Argentina. <br />
                         </p>
-                        <p>
-                            <t>Phone</t><br /> +54 911 6119 6992 <br />
+                        <p id="black">
+                            <t class="typography-preset-18px">Phone:</t><br /> +54 911 6119 6992 <br />
                         </p>
-                        <p>
-                            <t>Social Links</t><br />
-                            <a href="# "><i class="fa fa-dribbble "></i></a>
+                        <p id="black">
+                            <t class="typography-preset-18px">Social Links:</t><br />
+                            <!-- <a href="# "><i class="fa fa-dribbble "></i></a>
                             <a href="# "><i class="fa fa-twitter "></i></a>
-                            <a href="# "><i class="fa fa-facebook "></i></a>
+                            <a href="# "><i class="fa fa-facebook "></i></a> -->
                             <a href="https://www.linkedin.com/in/facundo-napal/ "><i class="fa fa-linkedin "></i></a>
-                            <a href="# "><i class="fa fa-apple "></i></a>
+                            <!-- <a href="# "><i class="fa fa-apple "></i></a> -->
                         </p>
                     </div>
                     <div class="col-lg-6 ">
-                        <p>
-                            <sm>CONTACT FORM</sm>
+                        <p id="black">
+                            <sm class="typography-preset-18px">CONTACT FORM</sm>
                         </p>
                         <form class="contact-form php-mail-form " role="form " action="contactform/contactform.php " method="POST ">
 
@@ -575,9 +587,9 @@
 
                         </form>
 
-                        <form name="form_clock " class="form__form-clock ">
+                        <!-- <form name="form_clock " class="form__form-clock ">
                             <p>La hora actual es:</p><input class="clock " type="text " name="clock " size="20 ">
-                        </form>
+                        </form> -->
                         <iframe class="embedded-map " width="600 " height="450 " style="border:0 " loading="lazy " allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJvQz5TjvKvJURh47oiC6Bs6A&key=AIzaSyDf1k4ZNVTJ2cBJNnYpsl_lzzTzm5iF0kE "></iframe>
                     </div>
                 </div>
@@ -618,7 +630,19 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11 "></script>
     <script src="js/main.js "></script>
     >
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log('hello world')
+          document.getElementById("contact-navitem").addEventListener("click", function () {
+            console.log('hello Subworld')
+            const element = document.getElementById("contact");
+            console.log(element)
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          });
+        });
+      </script>
 </html>
 </body>
 

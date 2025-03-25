@@ -119,7 +119,7 @@ By default, top navigation bar uses "fixed" position
     border-right: 1px solid #222;
     /* For IE, the outcast */
     zoom: 1;
-    *display: inline;
+    display: inline;
 }
 
 #section-topbar ul#nav>li {
@@ -235,18 +235,41 @@ p {
     color: white;
 }
 
+#black {
+    color: black;
+}
+
+.typography-preset-2 h5 {
+font-size: 2rem;
+margin-top: unset;
+left: -40px;
+top: 10px;
+position: relative;
+}
+
+.typography-preset-3 h5{
+    font-size: 3rem;
+    margin-top: unset;
+}
+
+.typography-preset-18px {
+    font-size: 18px;
+}
+
+
 #footwrap {
     background: #2f2f2f;
     padding-top: 50px;
     padding-bottom: 50px;
+    border: 1px solid red;
 }
 
 #footwrap p {
-    color: black;
+    color: black !important;
 }
 
 #footwrap h5 {
-    color: white;
+    color: black !important;
 }
 
 #footwrap t {
