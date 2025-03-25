@@ -119,7 +119,8 @@ By default, top navigation bar uses "fixed" position
     border-right: 1px solid #222;
     /* For IE, the outcast */
     zoom: 1;
-    display: inline;
+    display: flex;
+    justify-content: center;
 }
 
 #section-topbar ul#nav>li {
@@ -442,4 +443,8 @@ sm {
 .animation-fadein {
     animation: fadeIn;
     animation-duration: 4s;
+}
+
+.h48 {
+    height: 48px;
 }

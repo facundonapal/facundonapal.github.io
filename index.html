@@ -36,13 +36,18 @@
     <script src="js/clock.js"></script>
 </head>
 
-<body data-spy="scroll" data-offset="64" data-target="#section-topbar" onload="engineClock()">
+<body onload="engineClock()">
 
     <div id="section-topbar">
         <div id="topbar-inner">
             <div class="container">
                 <div class="row">
                     <div class="dropdown">
+                        <button class="hamburger-menu" aria-label="Menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                         <ul id="nav" class="nav">
                             <li class="menu-item"><a class="smothscroll" href="#about" title="About"><i class="fa fa-user"></i></a>
                             </li>
@@ -53,19 +58,11 @@
                             <li class="menu-item"><a class="smothscroll" href="#contact" title="Contact" id="contact-navitem"><i
                     class="fa fa-envelope"></i></a></li>
                         </ul>
-                        <!--/ uL#nav -->
                     </div>
-                    <!-- /.dropdown -->
-
                     <div class="clear"></div>
                 </div>
-                <!--/.row -->
             </div>
-            <!--/.container -->
-
-            <div class="clear"></div>
         </div>
-        <!--/ #topbar-inner -->
     </div>
     <!--/ #section-topbar -->
 
@@ -436,11 +433,11 @@
                     </p>
                     <!-- <button onclick="openIQVIA()">Abrir IQVIA</button> -->
 
-<script>
-  function openIQVIA() {
-    window.open("https://www.iqvia.com/", "_blank", "width=800,height=600");
-  }
-</script>
+                    <script>
+                        function openIQVIA() {
+                            window.open("https://www.iqvia.com/", "_blank", "width=800,height=600");
+                        }
+                    </script>
                 </div>
                 <div class="col-lg-3">
                     <p>IQVIA</p>
@@ -456,9 +453,9 @@
                     </p>
                     <script>
                         function openUNITED() {
-                          window.open("https://www.united.com/", "_blank", "width=800,height=600");
+                            window.open("https://www.united.com/", "_blank", "width=800,height=600");
                         }
-                      </script>
+                    </script>
                 </div>
                 <div class="col-lg-3">
                     <p>UNITED AIRLINES</p>
@@ -518,14 +515,14 @@
         <!--/.container -->
     </section>
 
-
+    <div id="contact" class="h48"></div>
 
     <section id="footwrap " name="contact ">
         <!--FOOTER DESCRIPTION -->
 
         <div>
             <div class="container ">
-                <div class="row " id="contact">
+                <div class="row ">
 
                     <div class="col-lg-2 typography-preset-3 ">
                         <h5>CONTACT</h5>
@@ -629,20 +626,49 @@
     <!-- Template Main Javascript File -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11 "></script>
     <script src="js/main.js "></script>
-    >
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            console.log('hello world')
-          document.getElementById("contact-navitem").addEventListener("click", function () {
-            console.log('hello Subworld')
-            const element = document.getElementById("contact");
-            console.log(element)
-            if (element) {
-              element.scrollIntoView({ behavior: "smooth", block: "start" });
-            }
-          });
+        document.addEventListener("DOMContentLoaded", function() {
+            // Existing contact nav item code
+            document.getElementById("contact-navitem").addEventListener("click", function() {
+                const element = document.getElementById("contact");
+                if (element) {
+                    element.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }
+            });
+
+            // Hamburger menu functionality
+            const hamburger = document.querySelector('.hamburger-menu');
+            const nav = document.querySelector('#nav');
+
+            // Toggle menu on hamburger click
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                nav.classList.toggle('active');
+            });
+
+            // Close menu when clicking a link
+            document.querySelectorAll('.menu-item a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    nav.classList.remove('active');
+                });
+            });
+
+            // Prevent menu from closing on scroll
+            let lastScrollTop = 0;
+            window.addEventListener('scroll', () => {
+                if (nav.classList.contains('active')) {
+                    // Keep the menu open
+                    nav.classList.add('active');
+                    hamburger.classList.add('active');
+                }
+            });
         });
-      </script>
+    </script>
+
 </html>
 </body>
 
