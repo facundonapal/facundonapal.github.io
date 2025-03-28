@@ -1,402 +1,411 @@
-        .custom-header {
-            background: rgba(55, 75, 111, 0.5);
-            h3 {
-                padding-bottom: 16px;
-            }
-        }
-        
-        #intro {
-            padding-top: 155px !important;
-        }
-        
-        .contained {
-            padding: 0 140px;
-        }
-        
-        #resume {
-            .container.desc.contained {
-                padding: 0 140px;
-                .col-lg-2.typography-preset-3 {
-                    padding-top: 48px;
-                }
-            }
-            .education-grid {
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-                padding-top: 96px;
-            }
-            .education-entry {
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
-                gap: 20px;
-            }
-            .education-item {
-                flex: 1;
-                t {
-                    font-weight: bold;
-                    font-size: 1.1em;
-                }
-            }
-            .education-date {
-                min-width: 120px;
-                text-align: right;
-                p {
-                    margin: 0;
-                }
-            }
-            @media (max-width: 992px) {
-                .col-lg-2 {
-                    margin-bottom: 20px;
-                }
-            }
-            @media (max-width: 768px) {
-                .education-entry {
-                    flex-direction: column;
-                    gap: 10px;
-                }
-                .education-date {
-                    text-align: left;
-                    min-width: auto;
-                }
-            }
-        }
-        
-        .typed-style {
-            font-weight: bold;
-        }
-        
-        .clock {
-            background: #555;
-            color: #fff;
-            font-size: 2rem;
-            text-align: center;
-            font-weight: 500;
-        }
-        
-        .form__form-clock {
-            text-align: center;
-            margin-top: 45px;
-        }
-        
-        #footer-p {
-            text-align: center;
-            color: azure !important;
-        }
-        
-        .embedded-map {
-            margin-top: 45px;
-        }
-        /* Media queries */
-        
-        @media screen and (max-width: 1200px) {
-            #headerwrap h1 {
-                font-size: 60px;
-                margin-top: unset;
-                padding-top: 24px;
-            }
-            #headerwrap h3 {
-                font-size: 18px;
-                margin-bottom: unset;
-                padding-bottom: 24px;
-            }
-            .education-item p {
-                margin-bottom: unset;
-            }
-        }
-        
-        @media screen and (max-width: 992px) {
-            #headerwrap h1 {
-                font-size: 48px;
-            }
-            #headerwrap h3 {
-                font-size: 16px;
-            }
-        }
-        
-        @media screen and (max-width: 768px) {
-            #headerwrap h1 {
-                font-size: 36px;
-            }
-            #headerwrap h3 {
-                font-size: 14px;
-            }
-        }
-        /* Navigation bar responsive styles */
-        
-        #section-topbar {
-            @media screen and (max-width: 768px) {
-                #topbar-inner {
-                    padding: 0 15px;
-                    background: rgba(55, 75, 111, 0.95);
-                    position: fixed;
-                    width: 100%;
-                    top: 0;
-                    z-index: 1000;
-                    height: 56px;
-                }
-                .hamburger-menu {
-                    display: block;
-                    background: none;
-                    border: none;
-                    cursor: pointer;
-                    padding: 10px;
-                    position: absolute;
-                    right: 15px;
-                    top: 11%;
-                    transform: translateY(-50%);
-                    z-index: 1001;
-                }
-                .hamburger-menu span {
-                    display: block;
-                    width: 25px;
-                    height: 3px;
-                    background-color: #fff;
-                    margin: 5px 0;
-                    transition: all 0.3s ease;
-                }
-                .hamburger-menu.active span:nth-child(1) {
-                    transform: rotate(45deg) translate(5px, 5px);
-                }
-                .hamburger-menu.active span:nth-child(2) {
-                    opacity: 0;
-                }
-                .hamburger-menu.active span:nth-child(3) {
-                    transform: rotate(-45deg) translate(7px, -6px);
-                }
-                #nav {
-                    display: none;
-                    position: fixed;
-                    top: 48px;
-                    right: -100%;
-                    width: 200px;
-                    height: auto;
-                    background: rgba(55, 75, 111, 0.98);
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    align-items: flex-end;
-                    padding: 10px 0;
-                    transition: right 0.3s ease;
-                    z-index: 999;
-                    backdrop-filter: blur(5px);
-                    border-radius: 0 0 0 10px;
-                    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
-                }
-                #nav.active {
-                    display: flex;
-                    right: 0;
-                    right: 30px;
-                    top: 46px;
-                    width: 30%;
-                }
-                .menu-item {
-                    margin: 5px 0;
-                    opacity: 0;
-                    transform: translateX(20px);
-                    transition: all 0.3s ease;
-                    width: 100%;
-                    text-align: right;
-                }
-                #nav.active .menu-item {
-                    opacity: 1;
-                    transform: translateX(-12px);
-                }
-                .menu-item a {
-                    font-size: 1.1em;
-                    padding: 8px 20px;
-                    display: block;
-                    color: #fff;
-                    text-decoration: none;
-                    transition: all 0.3s ease;
-                    border: none;
-                    outline: none;
-                    display: flex !important;
-                    justify-content: center;
-                    padding: 16px 0 16px 32px !important;
-                }
-                .menu-item a:hover {
-                    background: rgba(255, 255, 255, 0.1);
-                    border-radius: 0;
-                }
-                .menu-item a i {
-                    margin-right: 10px;
-                }
-            }
-            .custom-header {
-                padding-bottom: 16px;
-            }
-        }
-        /* Base responsive styles */
-        
-        html,
-        body {
-            width: 100%;
-            overflow-x: hidden;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 100%;
-            padding-left: 0;
-            padding-right: 0;
-            margin: 0;
-        }
-        
-        .row {
-            margin-left: 0;
-            margin-right: 0;
-            width: 100%;
-        }
-        /* Fix for white stripe issue */
-        
-        @media screen and (max-width: 768px) {
-            html,
-            body {
-                width: 100%;
-                overflow-x: hidden;
-                margin: 0;
-                padding: 0;
-            }
-            .container {
-                padding-left: 0;
-                padding-right: 0;
-                width: 100%;
-                margin: 0;
-            }
-            .col-lg-1,
-            .col-lg-2,
-            .col-lg-3,
-            .col-lg-4,
-            .col-lg-5,
-            .col-lg-6,
-            .col-lg-7,
-            .col-lg-8,
-            .col-lg-9,
-            .col-lg-10,
-            .col-lg-11,
-            .col-lg-12 {
-                padding-left: 15px;
-                padding-right: 15px;
-                width: 100%;
-            }
-            .col-lg-offset-1,
-            .col-lg-offset-2,
-            .col-lg-offset-3,
-            .col-lg-offset-4,
-            .col-lg-offset-5,
-            .col-lg-offset-6,
-            .col-lg-offset-7,
-            .col-lg-offset-8,
-            .col-lg-offset-9,
-            .col-lg-offset-10,
-            .col-lg-offset-11,
-            .col-lg-offset-12 {
-                margin-left: 0;
-            }
-            #section-topbar {
-                width: 100vw;
-                overflow: hidden;
-                margin: 0;
-                padding: 0;
-            }
-            #topbar-inner {
-                width: 100%;
-                margin: 0;
-                padding: 0 15px;
-            }
-            #headerwrap {
-                width: 100vw;
-                margin: 0;
-                padding: 0;
-            }
-            .img-responsive {
-                max-width: 100%;
-                height: auto;
-            }
-            .embedded-map {
-                width: 100% !important;
-                height: 300px !important;
-            }
-        }
-        /* Additional responsive fixes */
-        
-        @media screen and (max-width: 768px) {
-            #headerwrap {
-                width: 100%;
-                overflow: hidden;
-                padding-top: 8%;
-            }
-            .hero-img {
-                content: url("../img/facundo-profile.jpg");
-                width: 100%;
-                height: auto;
-            }
-            #intro {
-                padding-top: 100px !important;
-            }
-            .desc {
-                padding: 0 15px;
-            }
-            hr.col-lg-10 {
-                width: 100%;
-                margin: 20px 0;
-            }
-            #skillswrap {
-                padding: 40px 0;
-            }
-            #skillswrap .container {
-                padding: 0 15px;
-            }
-            #footwrap {
-                padding: 40px 0;
-            }
-            #footwrap .container {
-                padding: 0 15px;
-            }
-            .contact-form {
-                padding: 0 15px;
-            }
-        }
-        /* Fix for overlapping header at 700px */
-        
-        @media screen and (max-width: 700px) {
-            #headerwrap {
-                padding-top: 35px;
-                /* Increased padding to prevent overlap */
-            }
-            .custom-header {
-                margin-top: 20px;
-                padding-top: 20px;
-            }
-            #section-topbar {
-                position: fixed;
-                width: 100%;
-                top: 0;
-                z-index: 1000;
-            }
-        }
-        /* Fix for very small screens */
-        
-        @media screen and (max-width: 480px) {
-            .container {
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-            #headerwrap h1 {
-                font-size: 32px;
-                padding: 0 10px;
-            }
-            #headerwrap h3 {
-                font-size: 14px;
-                padding: 0 10px 16px 0;
-            }
-            .education-item t {
-                font-size: 1em;
-            }
-            .education-item p {
-                font-size: 0.9em;
-            }
-        }
+                            .custom-header {
+                                background: rgba(55, 75, 111, 0.5);
+                                h3 {
+                                    padding-bottom: 16px;
+                                }
+                            }
+                            
+                            #intro {
+                                padding-top: 48px;
+                            }
+                            
+                            .contained {
+                                padding: 0 140px;
+                            }
+                            
+                            #resume {
+                                .container.desc.contained {
+                                    padding: 0 140px;
+                                    .col-lg-2.typography-preset-3 {
+                                        padding-top: 48px;
+                                    }
+                                }
+                                .education-grid {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 30px;
+                                    padding-top: 96px;
+                                }
+                                .education-entry {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: flex-start;
+                                    gap: 20px;
+                                }
+                                .education-item {
+                                    flex: 1;
+                                    t {
+                                        font-weight: bold;
+                                        font-size: 1.1em;
+                                    }
+                                }
+                                .education-date {
+                                    min-width: 120px;
+                                    text-align: right;
+                                    p {
+                                        margin: 0;
+                                    }
+                                }
+                                @media (max-width: 992px) {
+                                    .col-lg-2 {
+                                        margin-bottom: 20px;
+                                    }
+                                }
+                                @media (max-width: 768px) {
+                                    .education-entry {
+                                        flex-direction: column;
+                                        gap: 10px;
+                                    }
+                                    .education-date {
+                                        text-align: left;
+                                        min-width: auto;
+                                    }
+                                }
+                            }
+                            
+                            .typed-style {
+                                font-weight: bold;
+                            }
+                            
+                            .clock {
+                                background: #555;
+                                color: #fff;
+                                font-size: 2rem;
+                                text-align: center;
+                                font-weight: 500;
+                            }
+                            
+                            .form__form-clock {
+                                text-align: center;
+                                margin-top: 45px;
+                            }
+                            
+                            #footer-p {
+                                text-align: center;
+                                color: azure !important;
+                            }
+                            
+                            .embedded-map {
+                                margin-top: 45px;
+                            }
+                            /* Media queries */
+                            
+                            @media screen and (max-width: 1200px) {
+                                #headerwrap h1 {
+                                    font-size: 60px;
+                                    margin-top: unset;
+                                    padding-top: 24px;
+                                }
+                                #headerwrap h3 {
+                                    font-size: 18px;
+                                    margin-bottom: unset;
+                                    padding-bottom: 24px;
+                                }
+                                .education-item p {
+                                    margin-bottom: unset;
+                                }
+                            }
+                            
+                            @media screen and (max-width: 992px) {
+                                #headerwrap h1 {
+                                    font-size: 48px;
+                                }
+                                #headerwrap h3 {
+                                    font-size: 16px;
+                                }
+                            }
+                            
+                            @media screen and (max-width: 768px) {
+                                #headerwrap h1 {
+                                    font-size: 36px;
+                                }
+                                #headerwrap h3 {
+                                    font-size: 14px;
+                                }
+                            }
+                            /* Navigation bar responsive styles */
+                            
+                            #section-topbar {
+                                @media screen and (max-width: 768px) {
+                                    #topbar-inner {
+                                        padding: 0 15px;
+                                        background: rgba(55, 75, 111, 0.95);
+                                        position: fixed;
+                                        width: 100%;
+                                        top: 0;
+                                        z-index: 1000;
+                                        height: 56px;
+                                    }
+                                    .hamburger-menu {
+                                        display: block;
+                                        background: none;
+                                        border: none;
+                                        cursor: pointer;
+                                        padding: 10px;
+                                        position: absolute;
+                                        right: 15px;
+                                        top: 11%;
+                                        transform: translateY(-50%);
+                                        z-index: 1001;
+                                    }
+                                    .hamburger-menu span {
+                                        display: block;
+                                        width: 25px;
+                                        height: 3px;
+                                        background-color: #fff;
+                                        margin: 5px 0;
+                                        transition: all 0.3s ease;
+                                    }
+                                    .hamburger-menu.active span:nth-child(1) {
+                                        transform: rotate(45deg) translate(5px, 5px);
+                                    }
+                                    .hamburger-menu.active span:nth-child(2) {
+                                        opacity: 0;
+                                    }
+                                    .hamburger-menu.active span:nth-child(3) {
+                                        transform: rotate(-45deg) translate(7px, -6px);
+                                    }
+                                    #nav {
+                                        display: none;
+                                        position: fixed;
+                                        top: 48px;
+                                        right: -100%;
+                                        width: 200px;
+                                        height: auto;
+                                        background: rgba(55, 75, 111, 0.98);
+                                        flex-direction: column;
+                                        justify-content: flex-start;
+                                        align-items: flex-end;
+                                        padding: 10px 0;
+                                        transition: right 0.3s ease;
+                                        z-index: 999;
+                                        backdrop-filter: blur(5px);
+                                        border-radius: 0 0 0 10px;
+                                        box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+                                    }
+                                    #nav.active {
+                                        display: flex;
+                                        right: 0;
+                                        right: 30px;
+                                        top: 46px;
+                                        width: 30%;
+                                    }
+                                    .menu-item {
+                                        margin: 5px 0;
+                                        opacity: 0;
+                                        transform: translateX(20px);
+                                        transition: all 0.3s ease;
+                                        width: 100%;
+                                        text-align: right;
+                                    }
+                                    #nav.active .menu-item {
+                                        opacity: 1;
+                                        transform: translateX(-12px);
+                                    }
+                                    .menu-item a {
+                                        font-size: 1.1em;
+                                        padding: 8px 20px;
+                                        display: block;
+                                        color: #fff;
+                                        text-decoration: none;
+                                        transition: all 0.3s ease;
+                                        border: none;
+                                        outline: none;
+                                        display: flex !important;
+                                        justify-content: center;
+                                        padding: 16px 0 16px 32px !important;
+                                    }
+                                    .menu-item a:hover {
+                                        background: rgba(255, 255, 255, 0.1);
+                                        border-radius: 0;
+                                    }
+                                    .menu-item a i {
+                                        margin-right: 10px;
+                                    }
+                                }
+                                .custom-header {
+                                    padding-bottom: 16px;
+                                }
+                            }
+                            /* Base responsive styles */
+                            
+                            html,
+                            body {
+                                width: 100%;
+                                overflow-x: hidden;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            
+                            .container {
+                                width: 100%;
+                                max-width: 100%;
+                                padding-left: 0;
+                                padding-right: 0;
+                                margin: 0;
+                            }
+                            
+                            .row {
+                                margin-left: 0;
+                                margin-right: 0;
+                                width: 100%;
+                            }
+                            /* Fix for white stripe issue */
+                            
+                            @media screen and (max-width: 768px) {
+                                html,
+                                body {
+                                    width: 100%;
+                                    overflow-x: hidden;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+                                .container {
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    width: 100%;
+                                    margin: 0;
+                                }
+                                .col-lg-1,
+                                .col-lg-2,
+                                .col-lg-3,
+                                .col-lg-4,
+                                .col-lg-5,
+                                .col-lg-6,
+                                .col-lg-7,
+                                .col-lg-8,
+                                .col-lg-9,
+                                .col-lg-10,
+                                .col-lg-11,
+                                .col-lg-12 {
+                                    padding-left: 15px;
+                                    padding-right: 15px;
+                                    width: 100%;
+                                }
+                                .col-lg-offset-1,
+                                .col-lg-offset-2,
+                                .col-lg-offset-3,
+                                .col-lg-offset-4,
+                                .col-lg-offset-5,
+                                .col-lg-offset-6,
+                                .col-lg-offset-7,
+                                .col-lg-offset-8,
+                                .col-lg-offset-9,
+                                .col-lg-offset-10,
+                                .col-lg-offset-11,
+                                .col-lg-offset-12 {
+                                    margin-left: 0;
+                                }
+                                #section-topbar {
+                                    width: 100vw;
+                                    overflow: hidden;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+                                #topbar-inner {
+                                    width: 100%;
+                                    margin: 0;
+                                    padding: 0 15px;
+                                }
+                                #headerwrap {
+                                    width: 100vw;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+                                .img-responsive {
+                                    max-width: 100%;
+                                    height: auto;
+                                }
+                                .embedded-map {
+                                    width: 100% !important;
+                                    height: 300px !important;
+                                }
+                            }
+                            /* Additional responsive fixes */
+                            
+                            @media screen and (max-width: 768px) {
+                                #headerwrap {
+                                    width: 100%;
+                                    overflow: hidden;
+                                    padding-top: 8%;
+                                }
+                                .hero-img {
+                                    content: url("../img/facundo-profile.jpg");
+                                    width: 100%;
+                                    height: auto;
+                                }
+                                #intro {
+                                    padding-top: 100px !important;
+                                }
+                                .desc {
+                                    padding: 0 15px;
+                                }
+                                hr.col-lg-10 {
+                                    width: 100%;
+                                    margin: 20px 0;
+                                }
+                                #skillswrap {
+                                    padding: 40px 0;
+                                }
+                                #skillswrap .container {
+                                    padding: 0 15px;
+                                }
+                                #footwrap {
+                                    padding: 40px 0;
+                                }
+                                #footwrap .container {
+                                    padding: 0 15px;
+                                }
+                                .contact-form {
+                                    padding: 0 15px;
+                                }
+                            }
+                            /* Fix for overlapping header at 700px */
+                            
+                            @media screen and (max-width: 700px) {
+                                #headerwrap {
+                                    padding-top: 35px;
+                                    /* Increased padding to prevent overlap */
+                                }
+                                .custom-header {
+                                    margin-top: 20px;
+                                    padding-top: 20px;
+                                }
+                                #section-topbar {
+                                    position: fixed;
+                                    width: 100%;
+                                    top: 0;
+                                    z-index: 1000;
+                                }
+                            }
+                            /* Fix for very small screens */
+                            
+                            @media screen and (max-width: 480px) {
+                                .container {
+                                    padding-left: 10px;
+                                    padding-right: 10px;
+                                }
+                                #headerwrap h1 {
+                                    font-size: 32px;
+                                    padding: 0 10px;
+                                }
+                                #headerwrap h3 {
+                                    font-size: 14px;
+                                    padding: 0 10px 16px 0;
+                                }
+                                .education-item t {
+                                    font-size: 1em;
+                                }
+                                .education-item p {
+                                    font-size: 0.9em;
+                                }
+                            }
+                            
+                            #particles-js {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                top: 618;
+                                left: 0;
+                                z-index: 1;
+                            }
