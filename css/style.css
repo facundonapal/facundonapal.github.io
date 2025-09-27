@@ -110,6 +110,18 @@ Top Bar
 
 By default, top navigation bar uses "fixed" position
 */
+#section-topbar {
+ opacity: 0;
+  pointer-events: none;          /* makes links unclickable while hidden */
+  transform: translateY(-20px);  /* small upward offset */
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+#section-topbar.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+  
+}
 
 #section-topbar ul#nav {
     display: inline-block;
@@ -121,7 +133,10 @@ By default, top navigation bar uses "fixed" position
     zoom: 1;
     display: flex;
     justify-content: center;
+ 
 }
+
+
 
 #section-topbar ul#nav>li {
     display: block;
@@ -176,7 +191,7 @@ SECTION WRAPS
 
 #headerwrap {
     /* background: url(../img/header-bg.jpg) no-repeat center top; */
-    padding-top: 62px;
+    /* padding-top: 62px; */
     text-align: center;
     background-attachment: relative;
     background-position: center center;
@@ -313,7 +328,7 @@ position: relative;
     padding-top: 50px;
 }
 
-.desc p {
+.desc p:not(.skill) {
     color: #2f2f2f;
 }
 
@@ -448,3 +463,4 @@ sm {
 .h48 {
     height: 48px;
 }
+
